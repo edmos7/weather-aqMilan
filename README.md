@@ -8,6 +8,9 @@ In the context of the Master's Degree course in Data Science at Università degl
   The creation of the final dataset(which you can get a closer look at here:https://www.kaggle.com/datasets/edmos07/milan-air-quality-and-weather-dataset-daily/data), was achieved through Jupyter notebooks, in order     to  make our process more fragmented and clearer.
   It is possible to consult the pdf report file in the repository for a clearer view on our process.
 
+### About datasets used
+  Various interim datasets were used in the process, but we don't provide them here, and the final dataset is provided on the Kaggle page. The "hourly_data_combined_2020_to_2024" dataset loaded in some notebooks         refers to the dataset available at https://www.kaggle.com/datasets/bwandowando/forbes-top-100-cities-weather-data2020-ytd 
+
 ### Special thanks
   This work was greatly enabled by Open-Meteo APIs (https://open-meteo.com/en/docs/historical-weather-api and https://open-meteo.com/en/docs/air-quality-api), which was in turn enabled by the Reanalyses models used to   provide the values in the data (CAMS European Reanalyses dataset, ERA5 and ERA5-Land, and the ECMWF IFS), my tea and I would therefore like to thank the data providers for their work and their open data policy.
 
