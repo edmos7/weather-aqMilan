@@ -1,0 +1,10 @@
+Here is the process for following our approach:
+AQ data is collected through an API call and stored, given its in GMT+00, we convert it to local Milan time, then we verify it's data quality.
+Next, we aggregate its values from hourly to daily, and we verify data quality post aggregation.
+
+Therefore the intended order to follow is:
+
+AQ_APIdatacollection.ipynb -> produces AQ_APIdata.csv
+input(AQ_APIdata)-> AQdata_tolocaltime.ipynb -> produces AQ_APIdata_localtime.csv
+input(AQ_APIdata_localtime)-> AQdataquality.ipynb
+input(AQ_APIdata_localtime)-> AQdataToDaily.ipynb -> produces dailyAQ_APIdata.csv
