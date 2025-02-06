@@ -1,0 +1,16 @@
+Here is the procedure to follow so as to correctly follow our approach:
+
+NOTE: the initial, original full Kaggle dataset is not included in the folder as it weighs 1GB, you must download it from the Kaggle 
+page externally to execute the first notebook in its entirety. On kaggle its nme is "hourly_data_combined_2020_to_2024.csv"
+
+Approach:
+The original hourly data for 100 cities is loaded, from there we filter for rows
+only concerning the city of Milan, and we shift to local time.
+Then we filter columns to reduce the dimensionality, next we assess the resultin data's quality.
+As a next step we aggregate the data to daily.
+
+input(hourly_data_combined_2020_to_2024) -> weatherMatchTest.ipynb
+input(hourly_data_combined_2020_to_2024) -> WeatherData_filtercity&tolocaltime.ipynb -> produces WeatherFilteredAndLocalTime_hourly.csv
+input(WeatherFilteredAndLocaltime_hourly.csv) -> Weather_filtercols.ipynb -> produces hourlyWeather_final.csv
+input(hourlyWeather_final.csv) -> weatherDQcheck.ipynb
+input(hourlyWeather_final.csv) -> weatherData_toDaily.ipynb -> produces dailyWeather.csv
